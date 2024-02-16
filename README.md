@@ -1,1 +1,1 @@
-# OfficeLicensesToMSSQL
+# OfficeLicensesToDB
