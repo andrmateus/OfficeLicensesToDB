@@ -3,12 +3,10 @@ import pandas as pd
 from services.graph_api import buscar_relatorio
 from models.database import enviar_para_banco
 
-# Supondo que o processamento e a lógica de merge sejam mantidos aqui, você pode chamar as funções definidas em outros arquivos:
 mailbox_usage = buscar_relatorio("getMailboxUsageDetail")
 office_usage = buscar_relatorio("getOffice365ActiveUserDetail")
 onedrive_usage = buscar_relatorio("getOneDriveUsageAccountDetail")
 
-# Processamento dos dados e merge (continuação do seu script...)
 office_usage = office_usage[
     [
         "Report Refresh Date",
